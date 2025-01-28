@@ -1,0 +1,35 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int dlina_simvolov;
+	int uslovie;
+	char simvol;
+	setlocale(LC_ALL, "rus");
+
+	cout << "Введите длину символов: ";
+	cin >> dlina_simvolov;
+
+	cout << "Введите какой символ будет использоваться: ";
+	cin >> simvol;
+
+	cout << "Введите какой будет линия: 1)Вертикальная, 2)Горизонтальная ";
+	cin >> uslovie;
+	if (uslovie == 1)
+	{
+		for (int i = 0; i < dlina_simvolov; i++)
+		{
+			cout << simvol << "\n";
+		}
+	}
+	else
+	{
+		for (int i = 0; i < dlina_simvolov; i++)
+		{
+			cout << simvol;
+		}
+	}
+}
