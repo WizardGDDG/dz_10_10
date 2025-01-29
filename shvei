@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "rus");
+    int l;
+    cout << "Какая длина ткани: ";
+    cin >> l;
+    int p;
+    cout << "Какая длина подушки: ";
+    cin >> p;
+    
+
+    while (p<l)
+    {
+        p += p;
+    }
+        
+         
+        
+        
+        
+    
+    cout << p;
+}   
