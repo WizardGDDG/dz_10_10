@@ -1,0 +1,31 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "rus");
+    int start;
+    int end;
+    int suma = 0;
+
+    cout << "Введите начало и конец диапозона: " << endl;
+    cin >> start;
+    cin >> end;
+
+   
+
+    for (int i = start; i < end + 1 ; i++)
+    {
+        if (i % 2 == 0)
+        {
+            cout << i << " ";
+            suma += i;
+            
+        }
+    }
+    cout << endl <<"Сумма нечетных: ";
+    cout << suma;
+}
+
