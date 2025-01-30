@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "rus");
+    int n;
+    int colichestwo;
+    int car = 0;
+    
+
+    cout << "Введите сколько ящиков на складе: ";
+    cin >> n;
+    cout << "Введите сколько может помещать ящиков машина: ";
+    cin >> colichestwo;
+
+    for (int i = 0; i < n;)
+    {
+        car += 1;
+        i += colichestwo;
+    }
+    cout << car;
+}
