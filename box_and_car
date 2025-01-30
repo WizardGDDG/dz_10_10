@@ -1,3 +1,4 @@
+
 #include <iostream>
 
 using namespace std;
@@ -14,11 +15,19 @@ int main()
     cin >> n;
     cout << "Введите сколько может помещать ящиков машина: ";
     cin >> colichestwo;
-
-    for (int i = 0; i < n;)
+    if (n>0)
     {
-        car += 1;
-        i += colichestwo;
+        for (int i = 0; i < n;)
+        {
+            car += 1;
+            i += colichestwo;
+        }
+        cout << car;
     }
-    cout << car;
+    else 
+    {
+        cout << "Так, ящиков нет";
+    }
 }
+
+
