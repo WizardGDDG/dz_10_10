@@ -1,4 +1,4 @@
-ДОДЕЛАТЬ
+
 #include <iostream>
 
 using namespace std;
@@ -12,24 +12,25 @@ int main()
     cout << "Введите число: ";
     cin >> n;
 
-    for (int i = 2; i < n + 1; i++)
+    if (n >= 0)
     {
-        if (n > 0)
+        if (n != 0)
         {
-            if (n != 0)
+            for (int i = 2; i < n + 1; i++)
             {
                 fact *= i;
             }
-            else
-            {
-                fact = 0;
-            }
+            cout << "Факториал " << n << " = " << fact;
         }
         else
         {
-            cout << "Число отрицательное";
+            fact = 1;
         }
     }
-    cout << "Факториал " << n << " = " << fact;
+    else
+    {
+        cout << "Число отрицательное";
+        fact = 0;
+    }
+    
 }
-
