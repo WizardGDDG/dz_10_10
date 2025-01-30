@@ -1,0 +1,31 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "rus");
+    int start;
+    int end;
+    int suma = 0;
+    int sredarif;
+
+    cout << "Введите начало и конец диапозона: " << endl;
+    cin >> start;
+    cin >> end;
+
+
+
+    for (int i = start; i < end + 1; i++)
+    {
+        cout << i << " ";
+        suma += i;
+        
+    }
+    cout << endl << "Сумма : ";
+    cout << suma << endl;
+    sredarif = suma / (end - start) - 1;
+
+    cout << "Среднеарифметическое: " << sredarif;
+}
